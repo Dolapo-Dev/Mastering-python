@@ -10,12 +10,24 @@ print("Hello world!\nHello world!")
 print("Hello" + " " + "Angela")
 print("Hello " + "Angela")
 print("Hello" + " Angela")
-input("where do you live ?")
-print("You typed " + input("where do you live ?"))
+input("where do you live ? ")
+print("You typed " + input("where do you live ? "))
 # "input("where do you live ?")" will become what you type to the prompt, it can be otutput using print()
-print("Good to know you are from " + input("where are you from ?"))
+print("Good to know you are from " + input("where are you from ? "))
 
 
-print("Hello " + input("what is your name ?"))
+print("Hello " + input("what is your name ? "))
 
-print(len(input("what is your name ?")))
+print( len( input("what is your name ? ") ) )
+
+name = "Jack"
+print(name)
+
+name = "Angela"
+print(name)
+
+name = input("what is your name? ")
+length = len(name)
+
+print(length)
+
