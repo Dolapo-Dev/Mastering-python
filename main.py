@@ -1,62 +1,64 @@
-#Fix the code below 👇
+# Data Types
+print("Hello"[0])
+print("Hello"[4])
+print("123"[2])
 
-print("Day 1 - String Manipulation")
-print('String Concatenation is done with the "+" sign.')
-print('e.g. print("Hello " + "world")')
-print("New lines can be created with a backslash and n.")
+# integer
+print(123 + 456)
+# in python 123_456_789 is equivalent to 123456789
 
-print("Hello world!\nHello world!")
+# when numbers have decimal point  they are Floating point number or Float
 
-print("Hello" + " " + "Angela")
-print("Hello " + "Angela")
-print("Hello" + " Angela")
-input("where do you live ? ")
-print("You typed " + input("where do you live ? "))
-# "input("where do you live ?")" will become what you type to the prompt, it can be otutput using print()
-print("Good to know you are from " + input("where are you from ? "))
+# Boolean can either be True or compile
 
+# Data type conversion
 
-print("Hello " + input("what is your name ? "))
+num_char = len(input("what is your name?\t"))
 
-print( len( input("what is your name ? ") ) )
+print(type(num_char)) # this give the data type of num_char
 
-name = "Jack"
-print(name)
+new_num_char = str(num_char) #this convert num_char data type to a string
 
+print("Your name has " + new_num_char + " characters")
 
-name = "Angela"
-print(name)
-
-name = input("what is your name? ")
-length = len(name)
-
-print(length)
-
+# First Quiz
+###################################
 # 🚨 Don't change the code below 👇
-a = input("a: ")
-b = input("b: ")
-############################################
+two_digit_number = input("Type a two digit number: ")
 # 🚨 Don't change the code above 👆
+
 ####################################
 #Write your code below this line 👇
-c = a
-a = b
-b = c
-#Write your code above this line 👆
-####################################
+
+new_two_digit_number = str(two_digit_number)
+a = int(new_two_digit_number[0])
+b = int(new_two_digit_number[1])
+
+print(a + b)
+###############################################
+
+# Another way
+print(type(two_digit_number[0])) # confirm the data type
+first_digit = int(two_digit_number[0])
+second_digit = int(two_digit_number[1])
+result = first_digit + second_digit
+new_result =str(result) # change int to str
+print("your result is " +new_result)
+
+print(3 ** 2)
+print(6 * 2)
+
+# Second Quiz
 # 🚨 Don't change the code below 👇
-print("a: " + a)
-print("b: " + b)
-##############################################################
-# Day 1 Challenge
-#1. Create a greeting for your program.
-print("Hello! Welcome to portal where Band names are generated")
-#2. Ask the user for the city that they grew up in.
-city = input("what is the name of the city you grew up?\n")
-#3. Ask the user for the name of a pet.
-pet = input("what is the name of your pet?\n")
-#4. Combine the name of their city and pet and show them their band name.
-print('Your band name could be ' +city + " " + pet)
-#5. Make sure the input cursor shows on a new line, see the example at:
-#   https://band-name-generator-end.appbrewery.repl.run/
+height = input("enter your height in m: ")
+weight = input("enter your weight in kg: ")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+print(type(height))
+print(type(weight))
+bmi = int(weight) / float(height) ** 2
+print(type(bmi))
+bmi_as_int = int(bmi)
+print(bmi_as_int)
 
