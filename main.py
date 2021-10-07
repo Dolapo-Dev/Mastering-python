@@ -62,3 +62,18 @@ print(type(bmi))
 bmi_as_int = int(bmi)
 print(bmi_as_int)
 
+# third quiz 
+# 🚨 Don't change the code below 👇
+age = input("What is your current age?")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+new_age = int(age)
+rem_age = 90 - new_age
+print(rem_age)
+rem_months = rem_age * 12
+rem_weeks = rem_age * 52
+rem_days = rem_weeks * 7
+# Using the f string
+message = f"You have {rem_days} days, {rem_weeks} weeks, and {rem_months} months left."
+print(message)
