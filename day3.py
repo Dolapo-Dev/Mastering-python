@@ -231,11 +231,11 @@ if direction == "left":
       if which_door != "red" or which_door != "blue":
         print("Game Over")
   else:
-    if lake ==  "swim" or lake != "wait":
-      print("Attacked by crocodiles! Game Over.")
+    #if lake ==  "swim" or lake != "wait":
+    print("Attacked by crocodiles! Game Over.")
 else:
-  if direction == "right" or direction != "left":
-    print("Fall into a hole! Game Over")
+  #if direction == "right" or direction != "left":
+  print("Fall into a hole! Game Over")
 
 
 
