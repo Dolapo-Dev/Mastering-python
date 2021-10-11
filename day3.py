@@ -153,4 +153,89 @@ if extra_cheese == "Y":
 print(f"Your final bill is ${bill}")
 
 
+# 🚨 Don't change the code below 👇
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+lower_case_combined_string = name1.lower()+name2.lower()
+
+t = lower_case_combined_string.count("t")
+r = lower_case_combined_string.count("r")
+u = lower_case_combined_string.count("u")
+e = lower_case_combined_string.count("e")
+l = lower_case_combined_string.count("l")
+o = lower_case_combined_string.count("o")
+v = lower_case_combined_string.count("v")
+e = lower_case_combined_string.count("e")
+
+first_number = str(t + r + u + e)
+second_number = str(l + o + v + e)
+
+result = int(first_number+second_number)
+
+if result < 10 or result > 90:
+  print(f"Your score is {result}, you go together like coke and mentos.")
+elif result >= 40 and result <= 50:
+  print(f"Your score is {result}, you are alright together.")
+else:
+  print(f"Your score is {result}.")
+
+# Day 3 major quiz
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+#https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
+
+first_question = input("You're at a cross road. Where do you want to go?  Type 'left' or 'right'\n\n")
+
+direction = first_question.casefold()
+
+if direction == "left":
+  wait_swim = input("You come to a lake. There is an island in the middle of the lake. \nType 'swim' to swim across or 'wait' to wait for a boat.\n\n")
+  lake = wait_swim.casefold()
+  if lake == "wait":
+    door = input("You arrive at the island unharmed. There is a house with 3 doors. \nOne is red, one yellow and one blue. Which colour do you choose?\n\n")
+    which_door = door.casefold()
+    if which_door == "yellow":
+      print("You Win!")
+    elif which_door == "blue":
+      print("Eaten by beasts! Game Over")
+    elif which_door == "red":
+      print("Burned by fire! Game Over")
+    else:
+      if which_door != "red" or which_door != "blue":
+        print("Game Over")
+  else:
+    if lake ==  "swim" or lake != "wait":
+      print("Attacked by crocodiles! Game Over.")
+else:
+  if direction == "right" or direction != "left":
+    print("Fall into a hole! Game Over")
+
+
 
