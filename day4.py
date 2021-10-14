@@ -27,11 +27,13 @@ names = names_string.split(", ")
 print(names)
 
 people = (len(names)) - 1
-print(people)
+# print(people)
 
 random_person = random.randint(0, people)
 
-print(random_person)
 
-print(f"{names[random_person]} is going to buy the meal today!")
+#print(random_person)
+print(names[random_person] + " is going to buy the meal today!")
 
+# or we use the random.choice() simply below
+#print(random.choice(names) + " is going to buy the meal today!")
